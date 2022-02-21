@@ -10,6 +10,6 @@ let disc40 = (cost * 0.40);
 let tot = (cost - disc40);
 
 }
-tot = document.getElementById(`result`) 
-tot.innerHTML = `Il costo del biglietto è di ${tot} €`;
+let price = document.getElementById(`result`) 
+price.innerHTML = `Il costo del biglietto è di ${tot} €`;
 
