@@ -1,11 +1,15 @@
-let Age= prompt(`Inserire l'età`);
-let Km= prompt(`Inserire il Numero di Km da percorrere`);
-let Cost = (Km *0.21);
+let age= prompt(`Inserire l'età`);
+let km= prompt(`Inserire il Numero di Km da percorrere`);
+let cost = (km * 0.21);
 
-if (Age<18){
-Cost= (Cost * 0.20);
-}  else if (Age>=65){
-Cost= (Cost * 0.40)
+if (age<18){
+let disc20 = (cost * 0.20);
+let tot = (cost - disc20);
+}  else if (age>=65){
+let disc40 = (cost * 0.40);
+let tot = (cost - disc40);
+
 }
-let Cost = document.getElementById(`MyVar`) 
-Cost.innerHTML = `Il costo del biglietto è di ${Cost} €`;
+tot = document.getElementById(`result`) 
+tot.innerHTML = `Il costo del biglietto è di ${tot} €`;
+
